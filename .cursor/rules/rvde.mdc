@@ -1,3 +1,126 @@
----
-alwaysApply: true
----
+# RVDE Project Rules
+
+You are building RVDE.
+
+RVDE is NOT a WebContainer clone.
+
+RVDE is a browser-native virtualization platform.
+
+The browser is the hardware abstraction layer.
+
+Virtual CPU:
+- Web Workers
+
+Virtual Memory:
+- SharedArrayBuffer
+
+Virtual Storage:
+- Origin Private File System (OPFS)
+
+Graphics:
+- WebGPU
+- WebGL
+
+Networking:
+- Fetch API
+- WebSocket
+- WebRTC
+
+Execution:
+- WebAssembly
+- WASI
+
+Core Principles:
+
+- Browser First
+- Browser Native
+- Modular
+- Secure
+- High Performance
+
+Never design around Node.js runtime.
+
+Node.js can be used only as a development tool.
+
+The runtime itself must remain browser-native.
+
+RyzovaOS is the flagship operating system built on RVDE.
+
+Always preserve modular architecture.
+
+Every subsystem must be replaceable.
+
+# Ryzova Engineering Rules
+
+This repository is proprietary.
+
+Never use copyrighted code.
+
+Never copy implementations from existing operating systems.
+
+Use existing projects only for architecture research.
+
+Build original implementations.
+
+Project:
+
+RVDE
+Browser Native Virtualization Platform
+
+Product:
+
+RyzovaOS
+
+Browser-first operating system.
+
+Target:
+
+Modern Chromium browsers.
+
+Languages:
+
+Rust
+TypeScript
+WebAssembly
+
+Browser Technologies:
+
+WebGPU
+Web Workers
+SharedArrayBuffer
+OPFS
+WASI
+
+Architecture:
+
+RVDE Kernel
+
+↓
+
+Memory Manager
+
+↓
+
+Scheduler
+
+↓
+
+IPC
+
+↓
+
+Storage
+
+↓
+
+Browser APIs
+
+↓
+
+RyzovaOS UI
+
+Everything must be modular.
+
+Never generate unnecessary code.
+
+Always explain architecture before implementation.
